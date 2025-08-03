@@ -72,7 +72,8 @@ Using IDE:
 ## 📬 API Testing
 
 You can test the APIs using the following Postman collection:  
-🔗 [Click to open in Postman]([https://www.postman.com/your-link-here](https://luxebeauty.postman.co/workspace/Cosmetics-Ecommerce~eae5b93d-b18c-4030-a0d1-8a98214a6de6/collection/38020700-05d54657-a148-4cfd-a617-a85178c743ec?action=share&creator=38020700)
+🔗 [Click to open in Postman](
+https://luxebeauty.postman.co/workspace/Cosmetics-Ecommerce~eae5b93d-b18c-4030-a0d1-8a98214a6de6/collection/38020700-05d54657-a148-4cfd-a617-a85178c743ec?action=share&creator=38020700)
 
 
 
