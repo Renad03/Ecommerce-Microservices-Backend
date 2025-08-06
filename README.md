@@ -3,7 +3,7 @@
 
 This is a microservices-based e-commerce application built with Spring Boot, featuring three core services: Wallet, Shop, and Inventory. Each service is independently deployable and interacts via RESTful APIs using Spring Cloud components like Eureka, Feign, API Gateway, and Resilience4j for fault tolerance.
 
-The system is frontend-agnostic and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
+The system is frontend-independent and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
 
 Microservice Breakdown
 
