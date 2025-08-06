@@ -5,7 +5,7 @@ This is a microservices-based e-commerce application built with Spring Boot, fea
 
 The system is frontend-independent and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
 
-Microservice Breakdown
+Microservices Breakdown
 
     👜 Wallet Service: Manages user authentication, wallet balance, and financial transactions.
 
