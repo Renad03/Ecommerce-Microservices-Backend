@@ -1,11 +1,11 @@
 
 # Ecommerce Microservices Backend
 
-This is a microservices-based e-commerce application built with Spring Boot, featuring three core services: Wallet, Shop, and Inventory. Each service is independently deployable and interacts via RESTful APIs with the help of Spring Cloud components such as Eureka, Feign, API Gateway, and Resilience4j for fault tolerance.
+This is a microservices-based e-commerce application built with Spring Boot, featuring three core services: Wallet, Shop, and Inventory. Each service is independently deployable and interacts via RESTful APIs using Spring Cloud components like Eureka, Feign, API Gateway, and Resilience4j for fault tolerance.
 
-The system is designed to be frontend-agnostic and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
+The system is frontend-agnostic and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
 
-The system is composed of three main microservices, each handling specific responsibilities:
+Microservice Breakdown
 
     👜 Wallet Service: Manages user authentication, wallet balance, and financial transactions.
 
@@ -13,7 +13,7 @@ The system is composed of three main microservices, each handling specific respo
 
     📦 Inventory Service: Maintains inventory data, manages stock levels, and syncs product availability.
 
-Additionally, the project includes:
+Supporting Services
 
     🧭 Eureka Server: For service discovery across microservices.
 
@@ -22,6 +22,33 @@ Additionally, the project includes:
     🌐 API Gateway: Routes and secures requests to the appropriate microservice.
 
 Each microservice includes a standardized API response class to ensure consistent and clean communication between services and with the client.
+
+## 🛡️ Fault Tolerance with Resilience4j
+
+To ensure **reliability** and **stability**, the project integrates **[Resilience4j](https://resilience4j.readme.io/)**, a fault-tolerance library designed for Java microservices. It provides several powerful patterns for handling runtime failures and service outages.
+
+### Key Features
+
+- **Circuit Breakers**  
+  Prevent cascading failures by temporarily halting calls to services that are failing. Automatically resets after a cooldown period.
+
+- **Rate Limiters**  
+  Restrict the number of calls to a service in a given time window to avoid overwhelming downstream systems.
+
+- **Retry Mechanism**  
+  Automatically retry failed requests a specified number of times before giving up.
+
+- **Fallback Methods**  
+  Gracefully handle service failures by providing default behavior or responses when the target service is down or unresponsive.
+
+###  Where It's Used
+
+These mechanisms are applied to **inter-service communication via Feign clients**, helping services recover from temporary issues such as:
+
+- Network latency
+- Service downtime
+- Slow or unresponsive upstream dependencies
+- Sudden traffic spikes
 
 
 ## Tech Stack
