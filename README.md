@@ -1,7 +1,7 @@
 
 # Ecommerce Microservices Backend
 
-This project is a Spring Boot-based microservices backend for an e-commerce application. It follows a scalable and modular architecture built with Spring Cloud, enabling flexibility, service isolation, and easy maintainability.
+This is a microservices-based e-commerce application built with Spring Boot, featuring three core services: Wallet, Shop, and Inventory. Each service is independently deployable and interacts via RESTful APIs with the help of Spring Cloud components such as Eureka, Feign, API Gateway, and Resilience4j for fault tolerance.
 
 The system is designed to be frontend-agnostic and can be integrated with any client-side technology — including mobile apps (e.g., Flutter, React Native) and web apps (e.g., React, Angular).
 
@@ -26,17 +26,15 @@ Each microservice includes a standardized API response class to ensure consisten
 
 ## Tech Stack
 
-**Core language:** Java	
+Java + Spring Boot
 
-**framework:** Spring Boot	
+Spring Cloud (Eureka, Gateway, Config Server, Feign, Resilience4j)
 
-**Microservices tools (Gateway, Eureka, Config):** Spring Cloud	
+Spring Data JPA
 
-**Database:** PostgreSQL
+MySQL
 
-**Authentication and security:** Spring Security	
-
-**Project build tool:** Maven	
+Maven
 
 
 ## Environment Variables
