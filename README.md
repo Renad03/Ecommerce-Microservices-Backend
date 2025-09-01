@@ -59,7 +59,7 @@ Spring Cloud (Eureka, Gateway, Config Server, Feign, Resilience4j)
 
 Spring Data JPA
 
-MySQL
+PostgreSQL
 
 Maven
 
